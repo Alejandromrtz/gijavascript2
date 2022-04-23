@@ -31,7 +31,7 @@ console.log(`Hello, my name is ${people[1][0]} ${people[1][1]} and I'm ${people[
     let userInput = prompt('Enter A Number 1-12.');
     let month = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August','September', 'October', 'November', 'December', 'Invalid Input'];
 
-    function promptReply(x) {
+    function promptReply(x){
         return(x);
     }
     switch (parseInt(userInput)) {
@@ -103,5 +103,6 @@ let bmiCalc = (tom, jerry) => {
     let bmiJerry = (jerry.mass/(jerry.height * jerry.height));
     let booleanCalc = (bmiTom > bmiJerry) ? true : false;
     return `Is Tom's BMI higher than Jerry's? ${booleanCalc}.`;
+
 };
 console.log(bmiCalc(tom, jerry));
